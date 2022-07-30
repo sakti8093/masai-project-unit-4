@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(to bottom right,rgb(67, 67, 229),rgb(198, 149, 198));
+    }
+    *{
+        font-family: sans-serif;
+    }
+    #main{
+        background-color: white;
+        margin: auto;
+        padding: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        height: 660px;
+        width: 450px;
+        display: grid;
+    }
+    h1{
+        padding: auto;
+        margin: auto;
+        font-size: 35px;
+    }
+    #enter{
+        display: grid;
+    }    
+     input[type=password],input[type=text] {
+        padding: auto;
+        margin: auto;
+        border: none;
+        box-shadow: 0px 2px 0px 0px rgb(205, 206, 241);
+        font-size: 1em;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 80%;
+        outline: none;
+    }
+    button{
+        padding: auto;
+        margin: auto;
+        width: 80%;
+        height: 60px;
+        border: none;
+        font-size: 1em;
+        color: white;
+        background-image: linear-gradient(to right,rgb(105, 105, 226),rgb(166, 69, 166));
+    }
+    button:hover{     
+        box-shadow: 0 2px #666;
+    }
+    button:active{
+        transform: translateY(2px);
+    }
+    #rest{
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+</style>
+<body>
+    <div id = "main">
+        <h1>Login</h1>
+        <div id = "enter">
+            <input type="text" id="username" placeholder="Email">
+            <input type = "password" id="password" placeholder="Password">
+            <button>Login</button>
+        </div>
+        <div id = "rest">
+            <p>Forgot <span style="color:rgb(78, 91, 201)">Password?</span> </p>
+            <p>Don't have an account? <span style="color:rgb(78, 91, 201)">Sign up</span></p>
+        </div>
+    </div>
+</body>
+</html>
